@@ -365,7 +365,7 @@ configurationVariables:
   ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionManagerSettings.heartBeatInterval
   : "0"
   ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.database.connectionSettings.databaseName
-  : origindemodb
+  : Discount
   ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionSettings.portNumber
   : "3306"
   ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionSettings.dbType
