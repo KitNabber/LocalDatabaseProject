@@ -31,96 +31,296 @@ services:
   packages:
   - name: LocalDatabaseProject
     version: "1.0"
+- serviceName: project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Discount_Database
+  packages:
+  - name: LocalDatabaseProject
+    version: "1.0"
+- serviceName: project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Discount_Demo_Db
+  packages:
+  - name: LocalDatabaseProject
+    version: "1.0"
+- serviceName: project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Jdbc_mysql
+  packages:
+  - name: LocalDatabaseProject
+    version: "1.0"
+- serviceName: project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:calculatediscount
+  packages:
+  - name: LocalDatabaseProject
+    version: "1.0"
 configurationVariables:
-  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionSettings.databaseName
-  : origindemodb
-  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionManagerSettings.startupRetryCount
-  : "0"
   ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionSettings.otherProperties
   : loginTimeout=60;
-  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionManagerSettings.poolIncrementSize
-  : "1"
-  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionSettings.serverName
-  : 172.20.240.1
   ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionEnabled
   : "false"
-  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionManagerSettings.blockingTimeout
-  : "1000"
-  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionManagerSettings.expireTimeout
-  : "1000"
-  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionSettings.password
-  : "{AES}PXMlRlh5l1Gh0SvCKBs8h99C6Px/E1onyRQ1j1CQlRE="
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Demo_Db.connectionSettings.serverName
+  : 192.168.1.100
   ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionManagerSettings.poolable
   : "false"
   ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionSettings.keyStore
   : ""
-  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionManagerSettings.startupRetryCount
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.calculatediscount.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.calculatediscount.connectionEnabled
+  : "false"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Jdbc_mysql.connectionSettings.driverType
+  : sqldriver
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Database.connectionManagerSettings.minimumPoolSize
   : "0"
   ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionEnabled
   : "false"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Database.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Jdbc_mysql.connectionSettings.password
+  : "{AES}PXMlRlh5l1Gh0SvCKBs8h99C6Px/E1onyRQ1j1CQlRE="
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Demo_Db.connectionSettings.keyStore
+  : ""
   ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionManagerSettings.minimumPoolSize
   : "0"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionSettings.trustStore
+  : ""
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Jdbc_mysql.connectionSettings.user
+  : root
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Database.connectionSettings.driverType
+  : sqldriver
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Demo_Db.connectionSettings.datasourceClass
+  : com.mysql.cj.jdbc.MysqlDataSource
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Database.connectionSettings.password
+  : "{AES}q6MgwtyfSQqk72HtldIMMQ=="
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionSettings.networkProtocol
+  : tcp
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Demo_Db.connectionSettings.trustStore
+  : ""
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Demo_Db.connectionSettings.portNumber
+  : "3306"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Database.connectionSettings.trustStore
+  : ""
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Jdbc_mysql.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionSettings.databaseName
+  : OriginDemo
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionSettings.keyStore
+  : ""
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.calculatediscount.connectionManagerSettings.minimumPoolSize
+  : "0"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Demo_Db.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.calculatediscount.connectionSettings.driverType
+  : sqldriver
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Jdbc_mysql.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionSettings.driverType
+  : sqldriver
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Demo_Db.connectionSettings.otherProperties
+  : loginTimeout=60;
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionSettings.datasourceClass
+  : com.mysql.cj.jdbc.MysqlDataSource
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionSettings.networkProtocol
+  : tcp
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Database.connectionSettings.dbType
+  : MySQL
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Demo_Db.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Jdbc_mysql.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Jdbc_mysql.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionSettings.password
+  : "{AES}PXMlRlh5l1Gh0SvCKBs8h99C6Px/E1onyRQ1j1CQlRE="
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Jdbc_mysql.connectionSettings.dbType
+  : MySQL
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Database.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Jdbc_mysql.connectionSettings.trustStore
+  : ""
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Demo_Db.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.calculatediscount.connectionSettings.trustStore
+  : ""
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionSettings.otherProperties
+  : loginTimeout=60;
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Demo_Db.connectionSettings.networkProtocol
+  : tcp
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Database.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Jdbc_mysql.connectionSettings.keyStore
+  : ""
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.calculatediscount.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Demo_Db.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Jdbc_mysql.connectionSettings.databaseName
+  : demodb
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Jdbc_mysql.connectionSettings.otherProperties
+  : loginTimeout=60;
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Database.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Demo_Db.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.calculatediscount.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Demo_Db.connectionSettings.driverType
+  : sqldriver
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Database.connectionSettings.keyStore
+  : ""
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.calculatediscount.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Jdbc_mysql.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionSettings.driverType
+  : sqldriver
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionManagerSettings.minimumPoolSize
+  : "0"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.calculatediscount.connectionSettings.dbType
+  : MySQL
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Demo_Db.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.calculatediscount.connectionSettings.serverName
+  : 172.20.240.1
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Database.connectionSettings.user
+  : rawa
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.calculatediscount.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Jdbc_mysql.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Jdbc_mysql.connectionSettings.serverName
+  : 127.0.0.1
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.calculatediscount.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Demo_Db.connectionSettings.dbType
+  : MySQL
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionSettings.databaseName
+  : origindemodb
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Jdbc_mysql.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Demo_Db.connectionSettings.user
+  : rawa
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Database.connectionSettings.otherProperties
+  : loginTimeout=60;
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Database.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Database.connectionSettings.portNumber
+  : "3306"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Jdbc_mysql.connectionManagerSettings.minimumPoolSize
+  : "0"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Jdbc_mysql.connectionSettings.portNumber
+  : "3306"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Demo_Db.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Demo_Db.connectionSettings.databaseName
+  : origindemodb
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Database.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.calculatediscount.connectionSettings.keyStore
+  : ""
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.calculatediscount.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Database.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Database.connectionEnabled
+  : "false"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.calculatediscount.connectionSettings.portNumber
+  : "3306"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.calculatediscount.connectionSettings.databaseName
+  : origindemodb
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.calculatediscount.connectionSettings.networkProtocol
+  : tcp
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Demo_Db.connectionManagerSettings.minimumPoolSize
+  : "0"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionSettings.portNumber
+  : "3306"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Database.connectionSettings.networkProtocol
+  : tcp
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Jdbc_mysql.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionSettings.datasourceClass
+  : com.mysql.cj.jdbc.MysqlDataSource
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Database.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Database.connectionSettings.datasourceClass
+  : com.mysql.cj.jdbc.MysqlDataSource
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.calculatediscount.connectionSettings.password
+  : "{AES}q6MgwtyfSQqk72HtldIMMQ=="
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Demo_Db.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Demo_Db.connectionSettings.password
+  : "{AES}q6MgwtyfSQqk72HtldIMMQ=="
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Demo_Db.connectionEnabled
+  : "false"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Database.connectionSettings.databaseName
+  : origindemodb
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionSettings.password
+  : "{AES}q6MgwtyfSQqk72HtldIMMQ=="
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.calculatediscount.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.calculatediscount.connectionSettings.otherProperties
+  : loginTimeout=60;
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionSettings.serverName
+  : 172.20.240.1
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.calculatediscount.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.calculatediscount.connectionSettings.user
+  : rawa
   ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionSettings.dbType
   : MySQL
   ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionSettings.user
   : rawa
   ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionSettings.user
   : root
-  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionSettings.trustStore
-  : ""
-  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionSettings.otherProperties
-  : loginTimeout=60;
   ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionSettings.trustStore
   : ""
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Jdbc_mysql.connectionManagerSettings.expireTimeout
+  : "1000"
   ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionSettings.serverName
   : 127.0.0.1
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Jdbc_mysql.connectionEnabled
+  : "false"
   ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionManagerSettings.heartBeatInterval
   : "0"
-  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionManagerSettings.blockingTimeout
-  : "1000"
-  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionManagerSettings.maximumPoolSize
-  : "10"
-  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionSettings.portNumber
-  : "3306"
-  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionSettings.networkProtocol
-  : tcp
-  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionSettings.datasourceClass
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.calculatediscount.connectionSettings.datasourceClass
   : com.mysql.cj.jdbc.MysqlDataSource
-  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionSettings.driverType
-  : sqldriver
-  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionSettings.databaseName
-  : OriginDemo
-  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionManagerSettings.maximumPoolSize
-  : "10"
-  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionSettings.keyStore
-  : ""
-  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionManagerSettings.minimumPoolSize
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Database.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Jdbc_mysql.connectionSettings.datasourceClass
+  : com.mysql.cj.jdbc.MysqlDataSource
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Demo_Db.connectionManagerSettings.heartBeatInterval
   : "0"
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Jdbc_mysql.connectionSettings.networkProtocol
+  : tcp
   ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionManagerSettings.heartBeatInterval
   : "0"
-  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionManagerSettings.startupBackoffSecs
-  : "10"
-  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionManagerSettings.startupBackoffSecs
-  : "10"
-  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionManagerSettings.expireTimeout
-  : "1000"
-  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionSettings.transactionType
-  : NO_TRANSACTION
-  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionSettings.driverType
-  : sqldriver
   ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionSettings.portNumber
   : "3306"
   ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionSettings.dbType
   : MySQL
-  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionSettings.password
-  : "{AES}q6MgwtyfSQqk72HtldIMMQ=="
-  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionManagerSettings.poolable
-  : "false"
-  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionSettings.datasourceClass
-  : com.mysql.cj.jdbc.MysqlDataSource
-  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionManagerSettings.poolIncrementSize
-  : "1"
-  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionSettings.networkProtocol
-  : tcp
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Database.connectionSettings.serverName
+  : 172.20.240.1
   ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionSettings.transactionType
   : NO_TRANSACTION
