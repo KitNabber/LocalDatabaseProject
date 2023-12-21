@@ -45,9 +45,8 @@
   <value name="retry_max">0</value>
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
-    <value name="createdBy">krya</value>
-    <value name="createdDate">1703162715054</value>
-    <value name="lastModifiedDate">1703162715054</value>
+    <value name="lastModifiedBy">krya</value>
+    <value name="lastModifiedDate">1703162755382</value>
     <record name="edgeServer" javaclass="com.wm.util.Values">
       <value name="id">d4495ec5914e4f27b5e52b2a0971c6cb</value>
       <value name="group">default</value>
@@ -107,6 +106,29 @@
         <number name="nodeIndex" type="Long">0</number>
         <Boolean name="xmlMapsetSupported">true</Boolean>
         <null name="outputMapSet"/>
+      </record>
+      <record name="/1" javaclass="com.wm.util.Values">
+        <value name="name">BLOCK</value>
+        <value name="itemType">CONTROLS</value>
+        <number name="nodeIndex" type="Long">1</number>
+      </record>
+      <record name="/1/0" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">SERVICES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">Flow</value>
+          <value name="groupName">flow</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="transformerSupport">false</value>
+          <value name="displayName">debugLog</value>
+          <value name="serviceName">pub.flow:debugLog</value>
+        </record>
+        <null name="outputMapSet"/>
+        <null name="mapSet"/>
+        <number name="ui_step_index" type="Long">3</number>
+        <number name="nodeIndex" type="Long">0</number>
       </record>
     </record>
   </record>

@@ -15,6 +15,14 @@ services:
   packages:
   - name: LocalDatabaseProject
     version: "1.0"
+- serviceName: project.localdatabase.integrations:createanAPI
+  packages:
+  - name: LocalDatabaseProject
+    version: "1.0"
+- serviceName: project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:Mysql
+  packages:
+  - name: LocalDatabaseProject
+    version: "1.0"
 configurationVariables:
   ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionSettings.databaseName
   : origindemodb
