@@ -155,7 +155,7 @@ configurationVariables:
   ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Demo_Db.connectionManagerSettings.startupBackoffSecs
   : "10"
   ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Jdbc_mysql.connectionSettings.databaseName
-  : origindemodb
+  : DemoDb
   ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Jdbc_mysql.connectionSettings.otherProperties
   : loginTimeout=60;
   ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Database.connectionManagerSettings.heartBeatInterval
