@@ -155,7 +155,7 @@ configurationVariables:
   ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Demo_Db.connectionManagerSettings.startupBackoffSecs
   : "10"
   ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Jdbc_mysql.connectionSettings.databaseName
-  : demodb
+  : origindemodb
   ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Jdbc_mysql.connectionSettings.otherProperties
   : loginTimeout=60;
   ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Database.connectionManagerSettings.heartBeatInterval
@@ -198,10 +198,10 @@ configurationVariables:
   : "false"
   ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.discountdbconector.connectionManagerSettings.poolIncrementSize
   : "1"
-  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Jdbc_mysql.connectionManagerSettings.blockingTimeout
-  : "1000"
   ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Jdbc_mysql.connectionSettings.serverName
   : 127.0.0.1
+  ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Jdbc_mysql.connectionManagerSettings.blockingTimeout
+  : "1000"
   ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.calculatediscount.connectionManagerSettings.startupBackoffSecs
   : "10"
   ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Discount_Demo_Db.connectionSettings.dbType
