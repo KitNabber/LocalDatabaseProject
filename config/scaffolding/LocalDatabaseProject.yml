@@ -23,6 +23,10 @@ services:
   packages:
   - name: LocalDatabaseProject
     version: "1.0"
+- serviceName: pub.flow:debugLog
+  packages:
+  - name: WmPublic
+    version: 11.0.0.0.656
 configurationVariables:
   ? artConnection.LocalDatabaseProject.project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldatabase.connectionSettings.databaseName
   : origindemodb
