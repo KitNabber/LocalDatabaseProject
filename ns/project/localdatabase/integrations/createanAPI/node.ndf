@@ -15,6 +15,23 @@
       <value name="form_qualified">false</value>
       <value name="is_global">false</value>
       <array name="rec_fields" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="node_type">field</value>
+          <value name="node_subtype">unknown</value>
+          <value name="node_comment"></value>
+          <record name="node_hints" javaclass="com.wm.util.Values">
+            <value name="field_largerEditor">false</value>
+            <value name="field_password">false</value>
+            <value name="field_usereditable">false</value>
+          </record>
+          <value name="is_public">false</value>
+          <value name="field_name">DiscountZone</value>
+          <value name="field_type">string</value>
+          <value name="field_dim">0</value>
+          <value name="nillable">true</value>
+          <value name="form_qualified">false</value>
+          <value name="is_global">false</value>
+        </record>
       </array>
       <value name="modifiable">true</value>
     </record>
@@ -28,6 +45,24 @@
       <value name="form_qualified">false</value>
       <value name="is_global">false</value>
       <array name="rec_fields" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="node_type">field</value>
+          <value name="node_subtype">unknown</value>
+          <value name="node_comment"></value>
+          <record name="node_hints" javaclass="com.wm.util.Values">
+            <value name="field_largerEditor">false</value>
+            <value name="field_password">false</value>
+            <value name="field_usereditable">false</value>
+          </record>
+          <value name="is_public">false</value>
+          <value name="field_name">createanAPIoutput</value>
+          <value name="field_type">string</value>
+          <value name="field_dim">1</value>
+          <value name="nillable">true</value>
+          <value name="form_qualified">false</value>
+          <value name="is_global">false</value>
+          <value name="is_soap_array_encoding_used">true</value>
+        </record>
       </array>
       <value name="modifiable">true</value>
     </record>
@@ -46,7 +81,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">krya</value>
-    <value name="lastModifiedDate">1703162808385</value>
+    <value name="lastModifiedDate">1703163635508</value>
     <record name="edgeServer" javaclass="com.wm.util.Values">
       <value name="id">d4495ec5914e4f27b5e52b2a0971c6cb</value>
       <value name="group">default</value>
@@ -96,11 +131,11 @@
         </array>
         <record name="connection" javaclass="com.wm.util.Values">
           <value name="connectionName">mysqldatabase</value>
-          <value name="connectionType">webMethods Adapter for JDBC ExtendedConnection</value>
+          <value name="connectionType">sagcloud</value>
           <null name="description"/>
         </record>
         <value name="connectionNSName">project.localdatabase.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:mysqldatabase</value>
-        <value name="connectionType">webMethods Adapter for JDBC ExtendedConnection</value>
+        <value name="connectionType">sagcloud</value>
         <Boolean name="accountReferenceResolved">true</Boolean>
         <number name="ui_step_index" type="Long">1</number>
         <number name="nodeIndex" type="Long">0</number>
